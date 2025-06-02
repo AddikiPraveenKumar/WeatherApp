@@ -31,7 +31,7 @@ enum State: Equatable {
 }
 
 /// ViewModel responsible for managing weather data and state
-internal class WeatherViewModel: ObservableObject {
+final class WeatherViewModel: ObservableObject {
     
     @Published var state: State = .idle
     private var weatherService: WeatherServiceProtocal

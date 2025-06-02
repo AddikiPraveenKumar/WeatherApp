@@ -25,7 +25,7 @@ struct WeatherView: View {
                 }
             }
             .navigationTitle("Weather Forecast")
-            .background(.blue)
+            .background(.blue.opacity(0.2))
             .onAppear {
                 if case .idle = viewModel.state {
                     viewModel.test = "="
@@ -66,7 +66,7 @@ struct WeatherView: View {
         ScrollView {
             VStack(spacing: 0) {
                 Text(cityName)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .padding(.top, 20)
